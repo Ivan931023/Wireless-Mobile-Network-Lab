@@ -714,7 +714,7 @@ def main():
     axes[1, 0].bar([len(x_pos)], [no_connection], color='red', edgecolor='k', label='No Connection')
     axes[1, 0].set_xlabel('MCS Index')
     axes[1, 0].set_ylabel('Usage Ratio')
-    axes[1, 0].set_title(f'MCS Distribution (Active Ratio = {strategies[example_ratio_idx]['active_ratio']:.1f})\n' + 
+    axes[1, 0].set_title(f'MCS Distribution (Active Ratio = {strategies[example_ratio_idx]["active_ratio"]:.1f})\n' +
                          f'Sum = {mcs_dist_full.sum():.4f}')
     axes[1, 0].grid(True, ls=':', axis='y')
     axes[1, 0].legend()

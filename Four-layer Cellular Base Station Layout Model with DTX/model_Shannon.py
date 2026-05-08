@@ -54,7 +54,7 @@ class SystemParameters:
         """
         bits_per_slot = capacity_bps * self.TIMESLOT_DURATION_SEC
         max_packets = int(bits_per_slot / self.PACKET_SIZE_BITS)
-        return max(1, max_packets)  # 至少能處理 1 個封包
+        return max(0, max_packets)
     
 # --- coordinate transforms (axial -> cartesian) ---
 def axial_to_xy(q: int, r: int, radius: float) -> tuple[float, float]:
